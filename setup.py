@@ -9,9 +9,9 @@ extension_module = Extension(
 )
 
 setup(
-    name = 'python-manylinux-demo',
+    name = 'python-manylinux-demo-pyaudio',
     version = '1.0',
-    description = 'This is a demo package with a compiled C extension.',
+    description = 'PyAudio package compiled for manylinux environments.',
     ext_modules = [extension_module],
-    packages=['pymanylinuxdemo', 'pymanylinuxdemo.tests'],
+    packages=['pymanylinuxdemo', 'pyaudio3', 'pymanylinuxdemo.tests'],
 )
